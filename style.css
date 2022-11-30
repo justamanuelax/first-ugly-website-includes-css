@@ -1,0 +1,143 @@
+h1 {
+  color: #f75;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  color: darkblue;
+  font-size: 24px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-style: oblique;
+}
+h3 {
+  font-size: 20px;
+  font-style: oblique;
+}
+h4 {
+  font-size: 18px;
+  color: brown;
+  text-align: center;
+}
+p {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+li {
+  font-size: 19px;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-weight: normal;
+}
+
+/*The descendant selector the p element is the child of the footer element  */
+
+footer p {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
+article header p {
+  font-style: italic;
+}
+
+#authour {
+  text-align: center;
+}
+
+#bottom_stage {
+  text-align: center;
+}
+/* The difference between id and class is that id are not able to be used twice */
+
+.related {
+  list-style: none;
+}
+/* list style type is to check and manage the style of the 
+bullet points */
+/* classes are used when you want to use multiple selectors for a task */
+/* id are used when you want to use a single selector for a task */
+/* classes are used when you want to use multiple selectors for a task */
+/* rgb(red,green,blue) */
+/*rgba(red,green,blue,opacity) opacity is also know as alpha
+*/
+/* hexadecimal # red,green,blue
+*/
+h2,
+h3 {
+  color: rgb(123, 168, 17);
+}
+p {
+  color: #ffffff;
+}
+body {
+  background-color: #212121;
+}
+.main-header {
+  background-color: #444;
+}
+aside {
+  background-color: #333;
+  border: 10px dotted blue;
+}
+li:first-child {
+  font-weight: bold;
+}
+/* The first child selector is used to select the first child of a parent element */
+li:last-child {
+  font-weight: oblique;
+}
+li:nth-child(2) {
+  color: purple;
+}
+li:nth-child(odd) {
+  color: green;
+}
+/* Pseudo-classes continue with the : */
+/* Pseudo-elements are things like first-child and last child */
+#white-goat {
+  color: white;
+}
+/* The link pseudoclass helps with the pseudo elements to be before clicked */
+a:link {
+  color: turquoise;
+  text-decoration: solid;
+}
+/* The link before it is interacted with */
+a:visited {
+  color: purple;
+}
+/* The visited pseudoclass helps with the pseudo elements to be after clicked */
+a:hover {
+  color: yellow; /* color of the links when hovered */
+  font-weight: bold; /* the font becomes bold when hovered */
+  text-decoration: underline dotted orangered; /* The decoration of the link */
+}
+/* The hover pseudoclass is what happens when the link is being hovered over */
+a:active {
+  text-decoration: line-through;
+}
+/*Red takes precedence in the conflict of interests when looking for the color of the selector displaying code to the webpage */
+#bottom-stage {
+  color: red;
+}
+.bottom-stage {
+  color: purple;
+}
+.text {
+  color: yellow /* !important */; /* The important makes sure in css conflicts the !important is prioritized */
+}
+footer {
+  color: orange;
+}
